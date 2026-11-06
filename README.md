@@ -2,6 +2,8 @@
 
 A web portal for private school tuition and fees across Virginia, Washington DC and Maryland.
 
+**Live demo:** https://nparkimf.github.io/school-portal/ — a read-only snapshot with fictional sample data (served from `docs/` by GitHub Pages; admin data entry requires running the real server). Rebuild it with `npm run build:demo`.
+
 - **Public dashboard** — average, median and range of tuition with filters by academic year, state and level; charts by state, level, year-over-year trend and fee breakdown; summary tables and the ten highest total costs.
 - **Schools** — searchable school directory, with a per-school page showing tuition history and a trend chart.
 - **Tuition & Fees** — every record in detail (tuition plus registration, application, technology, activity, books, uniform and other fees) with filters and CSV export.

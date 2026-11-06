@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>School Portal (Demo) - Private School Tuition &amp; Fees (VA, DC, MD)</title>
+  <link rel="stylesheet" href="./styles.css">
+  <style>
+    .demo-banner { background: #fff6df; border-bottom: 1px solid #e8d9a8; color: #6b5300; text-align: center; padding: 8px 16px; font-size: 14px; }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#app">Skip to content</a>
+  <div class="demo-banner">Read-only demo with fictional sample data &mdash; admin data entry is disabled in this preview.</div>
+  <header class="topbar">
+    <a class="brand" href="#/">School Portal</a>
+    <nav aria-label="Main">
+      <a href="#/" data-route="dashboard">Dashboard</a>
+      <a href="#/schools" data-route="schools">Schools</a>
+      <a href="#/fees" data-route="fees">Tuition &amp; Fees</a>
+      <a href="#/admin" data-route="admin" id="nav-admin">Admin</a>
+    </nav>
+    <div id="session"></div>
+  </header>
+  <main id="app" tabindex="-1"></main>
+  <footer class="footer">Private school tuition and fees for Virginia, Washington DC and Maryland.</footer>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.5.1/dist/chart.umd.js"></script>
+  <script src="./static-api.js"></script>
+  <script src="./app.js" type="module"></script>
+</body>
+</html>

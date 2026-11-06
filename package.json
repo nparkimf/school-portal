@@ -10,7 +10,8 @@
   "scripts": {
     "start": "node server/index.js",
     "dev": "node --watch server/index.js",
-    "seed": "node server/seed.js"
+    "seed": "node server/seed.js",
+    "build:demo": "node server/export-static.js"
   },
   "dependencies": {
     "chart.js": "^4.5.1",

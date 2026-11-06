@@ -22,6 +22,7 @@ const qs = (obj) => {
 };
 
 async function api(url, opts = {}) {
+  if (window.staticApi) return window.staticApi(url, opts); // static demo build (GitHub Pages)
   const init = { method: opts.method || 'GET', headers: {} };
   if (opts.body !== undefined || init.method === 'POST' || init.method === 'PUT') {
     init.headers['Content-Type'] = 'application/json';
