@@ -1,0 +1,19 @@
+{
+  "name": "school-portal",
+  "version": "1.0.0",
+  "description": "Private school tuition and fees portal for VA, DC and MD",
+  "type": "module",
+  "private": true,
+  "engines": {
+    "node": ">=22.13"
+  },
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "node --watch server/index.js",
+    "seed": "node server/seed.js"
+  },
+  "dependencies": {
+    "chart.js": "^4.5.1",
+    "express": "^5.3.0"
+  }
+}
