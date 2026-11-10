@@ -374,4 +374,4 @@ app.use((err, req, res, _next) => {
 
 ensureAdmin();
 const port = Number(process.env.PORT) || 3000;
-app.listen(port, () => console.log(`School Portal by GHCP running at http://localhost:${port}`));
+app.listen(port, () => console.log(`School Portal by Anthropic running at http://localhost:${port}`));

@@ -663,7 +663,7 @@ async function route() {
     app.innerHTML = `<h1>Unable to load this page</h1><div class="msg error" role="alert">${esc(err.message)}</div>`;
   } finally {
     refreshIcons();
-    document.title = `${app.querySelector('h1')?.textContent || 'School Portal'} | School Portal by GHCP`;
+    document.title = `${app.querySelector('h1')?.textContent || 'School Portal'} | School Portal by Anthropic`;
     app.focus({ preventScroll: true });
   }
 }

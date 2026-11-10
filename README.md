@@ -1,4 +1,4 @@
-# School Portal by GHCP
+# School Portal by Anthropic
 
 A web portal for private school tuition and fees across Virginia, Washington DC and Maryland.
 
