@@ -79,7 +79,7 @@
       topSchools: [...rows]
         .sort((a, b) => b.total - a.total)
         .slice(0, 10)
-        .map((r) => ({ id: r.school_id, name: r.school_name, state: r.state, city: r.city, level: r.level, tuition: r.tuition, total: r.total })),
+        .map((r) => ({ id: r.school_id, name: r.school_name, state: r.state, city: r.city, academic_year: r.academic_year, level: r.level, tuition: r.tuition, total: r.total })),
     };
   }
 

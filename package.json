@@ -11,10 +11,12 @@
     "start": "node server/index.js",
     "dev": "node --watch server/index.js",
     "seed": "node server/seed.js",
+    "test": "node --test server/portal.test.js",
     "build:demo": "node server/export-static.js"
   },
   "dependencies": {
     "chart.js": "^4.5.1",
-    "express": "^5.3.0"
+    "express": "^5.3.0",
+    "lucide": "^0.468.0"
   }
 }

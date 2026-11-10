@@ -3,24 +3,25 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>School Portal - Private School Tuition &amp; Fees (VA, DC, MD)</title>
+  <title>School Portal by GHCP - Tuition &amp; Fees</title>
   <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
   <a class="skip" href="#app">Skip to content</a>
   <header class="topbar">
-    <a class="brand" href="#/">School Portal</a>
+    <a class="brand" href="#/">School Portal <span>by GHCP</span></a>
     <nav aria-label="Main">
-      <a href="#/" data-route="dashboard">Dashboard</a>
-      <a href="#/schools" data-route="schools">Schools</a>
-      <a href="#/fees" data-route="fees">Tuition &amp; Fees</a>
-      <a href="#/admin" data-route="admin" id="nav-admin">Admin</a>
+      <a href="#/" data-route="dashboard"><i data-lucide="layout-dashboard" aria-hidden="true"></i> Dashboard</a>
+      <a href="#/schools" data-route="schools"><i data-lucide="school" aria-hidden="true"></i> Schools</a>
+      <a href="#/fees" data-route="fees"><i data-lucide="receipt" aria-hidden="true"></i> Tuition &amp; Fees</a>
+      <a href="#/admin" data-route="admin" id="nav-admin"><i data-lucide="settings" aria-hidden="true"></i> Admin</a>
     </nav>
     <div id="session"></div>
   </header>
   <main id="app" tabindex="-1"></main>
   <footer class="footer">Private school tuition and fees for Virginia, Washington DC and Maryland.</footer>
   <script src="/vendor/chart.umd.js"></script>
+  <script src="/icons/lucide.js"></script>
   <script src="/app.js" type="module"></script>
 </body>
 </html>

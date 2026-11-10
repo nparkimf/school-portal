@@ -54,5 +54,7 @@ for (const [from, file] of [
 ]) {
   fs.copyFileSync(path.join(root, from, file), path.join(docs, file));
 }
+fs.copyFileSync(path.join(root, 'node_modules/chart.js/dist/chart.umd.js'), path.join(docs, 'chart.umd.js'));
+fs.copyFileSync(path.join(root, 'node_modules/lucide/dist/umd/lucide.js'), path.join(docs, 'lucide.js'));
 
 console.log(`Demo built in docs/ - ${data.schools.length} schools, ${data.fees.length} fee records.`);

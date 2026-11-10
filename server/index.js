@@ -342,7 +342,7 @@ app.get('/api/summary', (req, res) => {
 
   const topSchools = db
     .prepare(
-      `SELECT s.id, s.name, s.state, s.city, f.level, f.tuition, (${TOTAL_SQL}) AS total
+      `SELECT s.id, s.name, s.state, s.city, f.academic_year, f.level, f.tuition, (${TOTAL_SQL}) AS total
        ${FROM} ${filtered.clause} ORDER BY total DESC LIMIT 10`,
     )
     .all(...filtered.params);
@@ -360,6 +360,7 @@ app.get('/api/summary', (req, res) => {
 // ---------- static & errors ----------
 
 app.use('/vendor', express.static(path.join(root, 'node_modules', 'chart.js', 'dist')));
+app.use('/icons', express.static(path.join(root, 'node_modules', 'lucide', 'dist', 'umd')));
 app.use(express.static(path.join(root, 'public')));
 
 app.use('/api', (req, res) => res.status(404).json({ error: 'Not found' }));
@@ -373,4 +374,4 @@ app.use((err, req, res, _next) => {
 
 ensureAdmin();
 const port = Number(process.env.PORT) || 3000;
-app.listen(port, () => console.log(`School Portal running at http://localhost:${port}`));
+app.listen(port, () => console.log(`School Portal by GHCP running at http://localhost:${port}`));
